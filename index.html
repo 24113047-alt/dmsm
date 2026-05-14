@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Laptop Aura Pro Store</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<header class="top-header">
+    <h2>Laptop Aura</h2>
+
+    <input type="text" id="searchInput" placeholder="Search laptops...">
+
+    <select id="categoryFilter">
+        <option value="All">All</option>
+        <option value="Ultrabook">Ultrabook</option>
+        <option value="Pro">Pro</option>
+        <option value="Gaming">Gaming</option>
+    </select>
+
+    <select id="sortPrice">
+        <option value="default">Sort by Price</option>
+        <option value="low">Low → High</option>
+        <option value="high">High → Low</option>
+    </select>
+
+    <input type="number" id="minPrice" placeholder="Min $" />
+    <input type="number" id="maxPrice" placeholder="Max $" />
+
+    <button id="darkModeToggle">🌙</button>
+
+    <div class="cart">🛒 <span id="cartCount">0</span></div>
+</header>
+
+<section class="banner-section">
+    <div class="banner-heading-animation"></div>
+    <div class="banner-content">
+        <h1>Upgrade Your Laptop Game 💻</h1>
+        <p>Discover the latest ultrabooks, gaming laptops, and professional devices!</p>
+        <button onclick="scrollToProducts()">Shop Now 🛒</button>
+    </div>
+</section>
+
+<section class="product-grid" id="product-container"></section>
+
+<div id="productModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modalDetails"></div>
+  </div>
+</div>
+
+<footer>
+    <p>© 2026 Laptop Aura Pro — Stylish & Smart 💻</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
